@@ -10,3 +10,10 @@ django = "*"
 
 [requires]
 python_version = "3.10"
+
+[scripts]
+manage = "./manage.py"
+shell = "./manage.py shell"
+migrate = "./manage.py migrate"
+service = "./manage.py runserver"
+check = "./manage.py makemigrations --dry-run --check -v3"
